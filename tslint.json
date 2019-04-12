@@ -22,7 +22,7 @@
 		],
 		"import-spacing": true,
 		"indent": [
-			false,
+			true,
 			"tabs"
 		],
 		"interface-over-type-literal": true,

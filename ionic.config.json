@@ -1,7 +1,7 @@
 {
-  "name": "ionic-angular-udemy",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
+	"name": "ionic-angular-project",
+	"integrations": {
+		"capacitor": {}
+	},
+	"type": "angular"
 }
