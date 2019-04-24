@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Place } from './place.model';
 
 @Injectable({
-	providedIn: 'root',
+	providedIn: 'root'
 })
 export class PlacesService {
 	private _places: Place[] = [
@@ -26,7 +26,7 @@ export class PlacesService {
 			'The best place in the world.',
 			'https://www.telegraph.co.uk/content/dam/Travel/hotels/europe/france/paris/paris-cityscape-overview-guide.jpg?imwidth=1400',
 			399.89
-		),
+		)
 	];
 
 	get places() {
@@ -34,4 +34,8 @@ export class PlacesService {
 	}
 
 	constructor() {}
+
+	getPlace(id: string) {
+		return { ...this.places.find(p => p.id === id) };
+	}
 }
