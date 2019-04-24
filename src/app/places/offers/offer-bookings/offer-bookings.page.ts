@@ -21,7 +21,6 @@ export class OfferBookingsPage implements OnInit {
 		this.route.paramMap.subscribe(param => {
 			if (!param.has('placeId')) {
 				this.navCtrl.navigateBack('/places/tabs/offers');
-				return;
 			}
 			this.place = this.placeService.getPlace(param.get('placeId'));
 		});
