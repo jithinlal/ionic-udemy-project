@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 @Component({
 	selector: 'app-offers',
 	templateUrl: './offers.page.html',
-	styleUrls: ['./offers.page.scss'],
+	styleUrls: ['./offers.page.scss']
 })
 export class OffersPage implements OnInit {
 	offers: Place[];

@@ -7,11 +7,15 @@ import { PlacesService } from '../../places.service';
 @Component({
 	selector: 'app-offer-bookings',
 	templateUrl: './offer-bookings.page.html',
-	styleUrls: ['./offer-bookings.page.scss'],
+	styleUrls: ['./offer-bookings.page.scss']
 })
 export class OfferBookingsPage implements OnInit {
 	place: Place;
-	constructor(private route: ActivatedRoute, private navCtrl: NavController, private placeService: PlacesService) {}
+	constructor(
+		private route: ActivatedRoute,
+		private navCtrl: NavController,
+		private placeService: PlacesService
+	) {}
 
 	ngOnInit() {
 		this.route.paramMap.subscribe(param => {
